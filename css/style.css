@@ -1,0 +1,517 @@
+@charset "UTF-8";
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+/* CSSのリセット（消さないでください） */
+
+.mid-title {
+    font-size: 1rem;
+}
+.large-title {
+    font-size: 1.2rem;
+}
+html {
+    margin: 0 auto;
+    width: 100%;
+}
+.hover-img {
+    transition: all 0.5s;
+}
+.hover-img:hover {
+    filter: opacity(80%);
+}
+.hover-text {
+    transition: all 0.5s;
+}
+.hover-text:hover {
+    background-color: rgb(15, 15, 15,0.3);
+    color: #fff;
+    filter: blur(1px);
+}
+.wrapper {
+    padding: 0 3%;
+}
+
+
+
+
+
+header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+.site-title {
+    padding: 20px 0 20px 20px;
+}
+.header-flex a {
+    color: #242424;
+    text-decoration: none;
+}
+.black {
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 0 5px 10px;
+}
+.header-flex {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.humberger-menu {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: none;
+    background: transparent;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+}
+.humberger-menu_bar {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: #242424;
+    position: absolute;
+    right: 8%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.humberger-menu_bar:first-child {
+    top: 16px;
+}
+.humberger-menu_bar:nth-child(2) {
+    top: 24px;
+}
+.humberger-menu_bar:last-child {
+    top: 32px;
+}
+.humberger-menu-open .humberger-menu_bar {
+    top: 50%;
+}
+.humberger-menu-open .humberger-menu_bar:first-child {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.humberger-menu-open .humberger-menu_bar:last-child {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.humberger-menu-open .humberger-menu_bar:nth-child(2) {
+    display: none;
+}
+.navigation {
+    display: none;
+    background: rgb(15, 15, 15,0.7);
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 10;
+    height: 100vh;
+}
+.navigation_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+}
+/*.navigation_list-item {
+    border-bottom: solid 1px #474747;
+}
+.navigation_list-item:first-child {
+    border-top: solid 1px #474747;
+}
+*/
+.navigation_link {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 24px 0;
+    transition: 0.3s;
+}
+@media (hover:hover) and (pointer:fine) {
+    .navigation_link:hover {
+        color: #333;
+    }
+}
+
+.instrument {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.inst-flex img {
+    width: 470px;
+    height: 311px;
+}
+
+.instrument {
+    display: flex;
+    justify-content: space-around;
+}
+.instrument a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+.inst-ob {
+    width: 470px;
+    height: 311px;
+    object-fit: cover;
+}
+
+.mainvisual {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+}
+.main-content {
+    display: flex;
+}
+.main-flex:first-child {
+    width: 70%;
+}
+.main-flex:last-child {
+    width: 30%;
+    text-align: center;
+}
+.main-item {
+    width: 80%;
+    padding: 20px 0;
+    line-height: 1.8;
+}
+/*.big-img {
+    width: 100%;
+    height: auto;
+}*/
+.name {
+    line-height: 1.8;
+}
+.zuzu-icon {
+    width: 135px;
+}
+.zuzu {
+    font-size: 0.875rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news {
+    background-image: url(../img/Mandolin-eastman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 25%;
+    margin-top: 30px;
+    overflow: scroll scroll;
+}
+.recent {
+    background-image: url(../img/Gong.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 25%;
+    margin-top: 30px;
+    overflow: scroll scroll;
+}
+.text {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.recent .text {
+    background-color: rgb(255, 255, 255,0.3);
+    width: 100%;
+    padding-top: 30px;
+} 
+.news a,.recent a {
+    color: #242424;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255,0.3);
+    display: inline-block;
+    align-items: center;
+    line-height: 1.8;
+    padding: 3% 0;
+}
+.news a {
+    width: 100%;
+}
+.recent a {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    color: #242424;
+    text-decoration: none;
+}
+footer li {
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    line-height: 2;
+    margin: 50px;
+}
+footer p {
+    margin-top: 50px;
+}
+
+
+/*BlueGrass=BrassBand*/
+
+.top-visual {
+    position: relative;
+    top: 150px;
+}
+.top-img {
+    width: 100%;
+    position: absolute;
+}
+.logo {
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    filter: drop-shadow(10px 10px 10px #333);
+}
+.song-wrapper {
+    padding-top: 1100px;
+    padding-bottom: 30px;
+}
+.song-img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+.song-item {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.song-text  {
+    width: 40%;
+    margin: auto 0;
+}
+
+/*Read More*/
+.readmore {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+}
+.read-btn {
+    color: #000;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    padding: 15px 60px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s;
+}
+.read-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    content: "";
+    transition: all 0.3s;
+}
+.read-btn::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    content: "";
+    transition: all 0.3s;
+}
+.read-btn::before {
+    border-top: 2px solid mediumspringgreen;
+    border-left: 2px solid mediumspringgreen;
+    width: 20px;
+    height: 20px;
+}
+.read-btn::after {
+    border-right: 2px solid mediumspringgreen;
+    border-bottom: 2px solid mediumspringgreen;
+    width: 20px;
+    height: 20px;
+}
+.read-btn:hover::after,
+.read-btn:hover::before {
+    width: 99%;
+    height: 95%;
+}
+
+
+/*About*/
+
+.about-wrapper {
+    margin-top: 100px;
+}
+.about-flex {
+    margin: 50px 0;
+}
+.about-flex-item {
+    display: flex;
+    justify-content: center;
+}
+.name-text {
+    width: 40%;
+    margin-left: 5%;
+}
+.about-table{
+    margin: 50px auto 300px auto;
+    font-size: 1rem;
+    border-spacing: 0;
+    line-height: 1.5;
+}
+.about-table td {
+    border-bottom: #242424 1px solid;
+    padding-top: 50px;
+}
+.about-table th {
+    border-bottom: #242424 1px solid;
+    padding-right: 30px;
+    font-weight: normal;
+    padding-top: 50px;
+}
+
+/*Access*/
+.access-wrapper {
+    margin-top: 100px;
+}
+.map {
+    margin: 50px auto;
+    text-align: center;
+    filter: grayscale(1);
+}
+.access-text {
+    line-height: 5;
+    text-align: left;
+    width: 60%;
+    margin: 80px auto;
+    margin-bottom: 300px;
+}
+
+.other li {
+    background-color: #009bc6;
+    box-shadow: 4px 4px 2px #003c4d;
+    transition: 0.3s;
+}
+.other li a {
+    color: #fff;
+}
+.other li:hover {
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+    .big-img {
+        width: 100%;
+        height: auto;
+    }
+    .instrument {
+        flex-direction: column;
+        text-align: center;
+    }
+    .inst-flex img {
+        width: 100%;
+        height: auto;
+    }
+    .main-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .main-flex:first-child {
+        width: 100%;
+        height: auto;
+    }
+    .main-flex:last-child {
+        width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+    .main-item {
+        width: 100%;
+    }
+    .name {
+        margin: 100px 0;
+    }
+    .news {
+        margin-bottom: 100px;
+    }
+    footer li {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+    footer {
+        margin-top: 30px;
+    }
+    footer p {
+        margin-top: 80px;
+    }
+
+    /*BlueGrass=BrassBand*/
+    .logo {
+        top: 70px;
+    }
+    .song-wrapper {
+        padding-top: 400px;
+    }
+    .song-img {
+        width: 150px;
+        height: 150px;
+    }
+    .song-text {
+        font-size: 0.8rem;
+    }
+
+    /*About*/
+    .about-flex-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-flex {
+        margin: 50px auto;
+    }
+    .name-text {
+        margin-top: 30px;
+        line-height: 2;
+        width: 80%;
+    }
+    .about-table {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    /*Access*/
+    iframe {
+        width: 70%;
+        height: auto;
+    }
+    .access-text {
+        font-size: 0.7rem;
+    }
+}

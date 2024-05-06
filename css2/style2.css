@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  letter-spacing: 0.1em;
+  background-color:#fff;
+  width: 100vw;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+li {
+  list-style: none;
+}
+/*
+コンテンツ幅を設定するための共通クラス
+*/
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bold {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.sub-title {
+  font-size: 2rem;
+  border-bottom: 5px double #7acbe1;
+}
+
+/*header*/
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+.site-title {
+  color: white;
+  font-size: 1rem;
+  line-height: 10vh;
+  background-color: #009bc6;
+  width: 100%;
+  height: 10vh;
+  padding-left: 3%;
+}
+.site-navi {
+  background-color: #fff;
+  padding: 5px 0;
+}
+.site-navi ul {
+  display: flex;
+  width: 100vw;
+}
+.site-navi li {
+  padding: 2px 5px;
+  margin: 5px 0px 10px 15px;
+  transition: 0.3s;
+}
+.last-navi {
+  padding-left: 0;
+  padding-right: 30px;
+  margin-left: auto;
+}
+.site-navi a {
+  font-size: 1rem;
+}
+.site-navi li:hover {
+  border-bottom: 5px solid #009bc6;
+}
+.last-navi li:hover {
+  border-bottom: 5px solid #99cc65;
+}
+
+
+/*mainvisual*/
+.mainvisual {
+  margin-top: 10vh;
+}
+.mainvisual-img {
+  width: 100vw;
+  height: 100v;
+}
+
+
+
+.art {
+  margin: 300px auto;
+  background-color: #7acbe1;
+}
+.art-flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 200px;
+}
+.art-flex img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 100px;
+}
+.catch {
+  writing-mode: vertical-rl;
+  font-size: 2rem;
+  background-color: #fff;
+}
+
+#news {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.grid-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.grid {
+  border: 1px solid #c3c3c3;
+  width: 300px;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow:4px 4px 2px #c3c3c3;
+  transition: 0.3s;
+}
+.grid:hover {
+  box-shadow: none;
+  opacity: 0.8;
+}
+.grid-text {
+  text-align: left;
+  line-height: 2rem;
+}
+.grid-text time {
+  font-size: 0.7rem;
+}
+.news-grid-wrapper {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-rows: 500px 500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.more {
+  text-align: right;
+  margin: 40px 0;
+}
+
+
+/*torikumi*/
+#torikumi {
+  margin: 50px auto;
+}
+
+.torikumi-flex-item {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+.torikumi-flex-img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 30px;
+}
+.torikumi-flex-text {
+  width: 600px;
+}
+
+
+/*bana*/
+.bana {
+  width: 60vw;
+  margin: 250px auto;
+}
+.bana-img {
+  width: 60vw;
+  height: 10vh;
+  object-fit: cover;
+}
+.bana-flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
+}
+.btn {
+  background-color: #009bc6;
+  padding: 20px 60px;
+  transition: 0.5s;
+}
+.btn a {
+  color: #fff;
+}
+.btn:hover {
+  background-color: #1760c0;
+}
+.btn a:hover {
+  color: #dbedf0;
+}
+
+/*where*/
+.where-flex {
+  color: #585858;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 20px 0 20px 0;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #dbedf0;
+}
+.where-item img {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+}
+.copy {
+  color: #fff;
+  background-color: #009bc6;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.color li:nth-child(1)::before {
+  content: "カラーチャート";
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+}
+.color li:nth-child(1) {
+  position: relative;
+  margin-top: 200px;
+  background-color: #1760c0;
+}
+.color li:nth-child(2) {
+  background-color: #4699ca;
+}
+.color li:nth-child(3) {
+  background-color: #80a491;
+}
+.color li:nth-child(4) {
+  background-color: #dbedf0;
+}
+
+.c li:nth-child(1) {
+  background-color: #009bc6;
+}
+.c li:nth-child(2) {
+  background-color: #7acbe1;
+}
+.c li:nth-child(3) {
+  background-color: #fff;
+}
+.c li:nth-child(4) {
+  background-color: #99cc65;
+}
+
+
+
+@media screen and (max-width: 390px) {
+  .sub-title {
+    font-size: 1rem;
+  }
+  .bold {
+    font-size: 1rem;
+  }
+  #header {
+    position: relative;
+    width: 100vw;
+  }
+  .site-title {
+    font-size: 0.5rem;
+    height: 50px;
+    line-height: 50px;
+  }
+  .site-navi ul {
+    justify-content: center;
+  }
+  .site-navi li {
+    margin: 0 0;
+    padding: 0 0;
+    text-align: center;
+  }
+  .site-navi label {
+    width: 25%;
+  }
+  .last-navi {
+    margin-left: 0;
+    padding: 0 0;
+  }
+  .site-navi a {
+    font-size: 0.5rem;
+  }
+  .mainvisual {
+    margin-top: 0;
+  }
+  .art {
+    margin: 30px auto;
+    position: relative;
+  }
+  .art-flex {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .art-flex img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  margin: 50px auto;
+  }
+  .catch {
+    position: absolute;
+    top: 30px;
+    right: 15%;
+    font-size: 0.8rem;
+    z-index: 2;
+  }
+  .art :nth-child(2) >.catch {
+    top: 330px;
+    right: 80%;
+  }
+
+
+  .news-grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    margin: 0 auto;
+  }
+  .grid3,.grid4,.grid5,.grid6 {
+    display: none;
+  }
+
+
+
+  .torikumi-flex-item {
+    flex-direction: column;
+    width: 80vw;
+    margin: 10px auto;
+  }
+  .torikumi-flex-text {
+    width: 80vw;
+    font-size: 0.8rem;
+    margin-top: 50px;
+  }
+  .torikumi-flex-img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 5px;
+    margin-top: 50px;
+  }
+
+
+  .bana {
+    margin: 80px auto;
+  }
+  .btn {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+  .bana-flex {
+    margin: 20px 0;
+  }
+
+
+  .where-flex {
+    font-size: 0.5rem;
+  }
+
+  .copy {
+    font-size: 0.5rem;
+  }
+}
